@@ -1,6 +1,6 @@
 # Public EC2 Instance
 resource "aws_instance" "public_instance" {
-  ami               = "ami-0166fe664262f664c"  # Amazon Linux 2 AMI
+  ami               = "ami-0c55b159cbfafe1f0"  # Amazon Linux 2 AMI
   instance_type     = "t2.micro"
   subnet_id         = aws_subnet.public_subnet.id
   security_groups = [aws_security_group.public_sg.id]
@@ -11,7 +11,7 @@ resource "aws_instance" "public_instance" {
 
 # Private EC2 Instance
 resource "aws_instance" "private_instance" {
-  ami               = "ami-0166fe664262f664c"  # Amazon Linux 2 AMI
+  ami               = "ami-0c55b159cbfafe1f0"  # Amazon Linux 2 AMI
   instance_type     = "t2.micro"
   subnet_id         = aws_subnet.private_subnet.id
   security_groups = [aws_security_group.private_sg.id]
