@@ -1,6 +1,7 @@
 1. FOOT AND SOME EXPLANATORY NOTES.
 
 INSTANCES.TF
+
 1. The settings enable_dns_support = true and enable_dns_hostnames = true are used during the creation of an Amazon Virtual Private Cloud (VPC) to enable DNS resolution and DNS hostnames within your VPC. Here's why you might need to enable these features:
 1. enable_dns_support = true
 Purpose: This setting enables DNS resolution within the VPC.
@@ -8,6 +9,7 @@ Why it's needed:
 When set to true, the VPC allows instances to resolve DNS hostnames to IP addresses.
 It ensures that your instances can communicate with AWS services by domain name (e.g., ec2.amazonaws.com, s3.amazonaws.com), rather than having to rely solely on static IPs.
 If you're using AWS services like Route 53 or EC2 instances that depend on DNS, enabling DNS support ensures proper network and service integration.
+
 2. enable_dns_hostnames = true
 Purpose: This setting allows EC2 instances within your VPC to receive public DNS hostnames.
 Why it's needed:
